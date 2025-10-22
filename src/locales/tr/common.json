@@ -13,8 +13,40 @@
         "about": "HAKKIMDA",
         "contact": "İLETİŞİM",
         "portfolio": "PORTFOLYO"
-        
+    },
+    "sections": {
+        "timeline": "Hikaye",
+        "skills": "Yetenekler",
+        "projects": "Projeler",
+        "contact": "İletişime Geç"
+    },
+    "aboutTimeline": {
+        "today": [
+            "Still exploring, reading, asking questions; sometimes idling, sometimes just living. The only constant is the desire to create, the dreamer’s spirit, and the urge to accomplish great things in life."
+        ],
+        "late-university": [
+            "Worked part-time, exploring the challenges and benefits of remote work, while reflecting on the desire to work at solution-oriented companies. Interned at a global company, gaining a deep understanding of corporate workflows, product design processes, and the challenges of teamwork.",
+            "Launched the first entrepreneurial project; it was selected as the top project within the computer engineering department.",
+            "Attended the graduation ceremony, but has not yet completed the degree."
+        ],
+        "early-university": [
+            "Started working as a freelancer; calculated the first project&apos;s payment in &quot;coffee units&quot; (one while working, one upon completion). Gained first agency experience, earning pocket money through simple tasks.",
+            "Adapted to university and software development. Enjoyed tackling problems, but was not fond of exams.",
+            "Developed an interest in games and music, exploring different games and artistic languages. Learned English and wrote and released the first song in English."
+        ],
+        "graduation": [
+            "Found the first part-time job and gained experience in a multidisciplinary company. Started a personal blog.",
+            "Collaborated with friends on the first team project.",
+            "Experienced the first internship, approaching major problems in an unfamiliar field and producing creative solutions."
+        ],
+        "college": [
+            "Learned to play guitar; spent breaks repeatedly practicing the same piece in the music room. Joined the school band, performing in semester-end and large concerts. Developed an interest in violin and participated in a theater group, playing a minor role.",
+            "Deepened engagement with writing; immersed in deep conversations and thoughts. Published the first school magazine, writing poems, stories, and reflections. Discovered a love for literature.",
+            "Worked as an apprentice on various projects, receiving an award for one of them. Developed an interest in physics and mathematics, considering studying engineering."
+        ],
+        "childhood": [
+            "A curious child, creating a guitar out of a yogurt cup and rubber bands, singing for the family. Collected small objects in pockets and squeezed large books under the sofa.",
+            "Kept a tiny notebook for dreams and daily thoughts, explored the library, and listened to the stories of great people. Played whenever possible."
+        ]
     }
-  
-
 }

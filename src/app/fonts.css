@@ -61,6 +61,7 @@
 
   --font-size-pageHeading: 16rem; /* 160px */
   --font-size-pageSubHeading: 13rem; /* 130px */
+  --font-size-sectionHeading: 8rem; /* 72px */
 
 
   --text-color-black: #000000;
@@ -153,6 +154,12 @@
   line-height: var(--font-line-height-normal);
   letter-spacing: var(--font-letter-spacing-tighter);
   color: var(--text-color-black);
-  
+}
+.sectionHeading {
+  font-size: var(--font-size-sectionHeading);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-line-height-normal);
+  letter-spacing: var(--font-letter-spacing-normal);
+  color: var(--text-color-black);
 }
 
