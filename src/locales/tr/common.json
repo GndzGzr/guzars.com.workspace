@@ -1,0 +1,20 @@
+{
+    "title": "Guzars.com",
+    "contactMe": "İletişime Geç",
+    "subdomain": {
+        "blog": "Blog",
+        "workshop": "Atölye",
+        "guzars": "Güzar"
+    },
+    "headers": {
+        "blog": "BLOG",
+        "workshop": "ATÖLYE",
+        "guzars": "GÜZAR",
+        "about": "HAKKIMDA",
+        "contact": "İLETİŞİM",
+        "portfolio": "PORTFOLYO"
+        
+    }
+  
+
+}

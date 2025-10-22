@@ -1,7 +1,7 @@
 import { send } from "process";
 import {AiOutlineMenu, AiOutlineSun, AiOutlineMoon, AiOutlineGlobal} from "react-icons/ai"
 import {BsSend} from "react-icons/bs";
-import { AtomIconProps, TextSize } from "@/store/types/iconType";
+import { AtomIconProps, IconSize } from "@/store/types/iconType";
 
 const AtomIconSVG = {
     menu: (props: AtomIconProps) => <AiOutlineMenu color={props.color} size={props.size} />,
@@ -11,7 +11,7 @@ const AtomIconSVG = {
     send: (props: AtomIconProps) => <BsSend color={props.color} size={props.size} />,
 }
 
-const AtomIcon = (props: {name: keyof typeof AtomIconSVG, color: string, size: TextSize, className?: string}) => {
+const AtomIcon = (props: {name: keyof typeof AtomIconSVG, color: string, size: IconSize, className?: string}) => {
     const IconComponent = AtomIconSVG[props.name];
     const className = props.className || "";
     return <span className={className}>{<IconComponent name={props.name} color={props.color} size={props.size} />}</span>;

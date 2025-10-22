@@ -1,6 +1,6 @@
-type TextSize = "s" | "m" | "l" | "xl" | "d";
+type IconSize = "s" | "m" | "l" | "xl" | "d";
 
-const sizeToPixels: Record<TextSize, number> = {
+const sizeToPixels: Record<IconSize, number> = {
   d: 8,
   s: 16,
   m: 24,
@@ -23,10 +23,10 @@ const colorToHex: Record<string, string> = {
 
 interface AtomIconProps {
   name: string;
-  size?: TextSize;
-  color?: keyof typeof colorToHex;
+  size: IconSize;
+  color: keyof typeof colorToHex;
   className?: string;
 }
 
-export type { TextSize, AtomIconProps,  };
+export type { IconSize, AtomIconProps };
 export { sizeToPixels };
