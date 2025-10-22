@@ -115,28 +115,32 @@ const TimeLineGrid = () => {
                     >
 
 
-                        <AtomText variant="timeLineInfo" family="sans" className="timeLineInfo ">
-                            <motion.span
 
-                                key={currentIndex}
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.3 }}
-                            >
+                        <motion.span
+
+                            key={currentIndex}
+                            initial={{ opacity: 0, x: -10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <AtomText variant="timeLineInfo" family="sans" className="timeLineInfo ">
                                 {String(currentIndex + 1).padStart(2, '0')} / {String(timelineData.length).padStart(2, '0')}
-                            </motion.span>
-                        </AtomText>
+                            </AtomText>
+                        </motion.span>
 
-                        <AtomText variant="timeLineInfo" family="sans" className="timeLineInfo">
-                            <motion.span
-                                key={currentItem.title}
-                                initial={{ opacity: 0, x: 10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.3 }}
-                            >
+
+
+                        <motion.span
+                            key={currentItem.title}
+                            initial={{ opacity: 0, x: 10 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <AtomText variant="timeLineInfo" family="sans" className="timeLineInfo">
                                 {currentItem.title}
-                            </motion.span>
-                        </AtomText>
+                            </AtomText>
+                        </motion.span>
+
 
 
                     </motion.div>
