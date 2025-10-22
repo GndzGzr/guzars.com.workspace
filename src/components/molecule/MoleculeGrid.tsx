@@ -11,11 +11,11 @@ interface MoleculeGridProps {
     children: JSX.Element[]; // or React.ReactNode
 }
 const MoleculeThreePartGrid = ({ displayBg, children }: MoleculeGridProps) => {
-    const {t} = useI18n();
+    const { t } = useI18n();
     return (
         <>
             <AtomLayout
-                height="screen"
+                height="minScreen"
                 width="full"
                 flow="grid"
                 align="center"
@@ -44,29 +44,32 @@ const MoleculeThreePartGrid = ({ displayBg, children }: MoleculeGridProps) => {
 };
 
 const MoleculeEightPartGrid = ({ displayBg, children }: MoleculeGridProps) => {
-    const {t} = useI18n();
+    const { t } = useI18n();
     return (
         <>
             <AtomLayout
-                height="screen"
+                height="maxScreen"
                 width="full"
                 flow="grid"
-                align="center"
-                colNumbers="6"
-                rowNumbers="6"
+                align="start"
+                verticalAlign="between"
+                colNumbers="4"
+                rowNumbers="1"
                 gapSize="small"
                 padding="small"
                 margin="none"
             >
 
-            test
-     
+                <div className={`col-span-1 h-full ${displayBg ? "bg-gray-200" : ""}`}>
+                    {children[0]}
+                </div>
 
-
-
+                <div className={`col-span-3 w-full h-full  ${displayBg ? "bg-gray-200" : ""}`}>
+                    {children[1]}
+                </div>
             </AtomLayout>
         </>
     );
 };
 
-export {MoleculeThreePartGrid, MoleculeEightPartGrid };
+export { MoleculeThreePartGrid, MoleculeEightPartGrid };

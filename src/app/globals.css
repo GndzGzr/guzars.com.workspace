@@ -25,6 +25,10 @@
   --white-700: #aeaeae;
   --white-800: #878787;
   --white-900: #676767;
+
+
+  --passive-text-color: var(--black-400);
+  --active-text-color: var(--black-800);
 }
 
 @theme inline {
@@ -44,4 +48,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+.timeline .activeYear {
+  color: var(--active-text-color);
+}
+
+.timeline .passiveYear {
+  color: var(--passive-text-color);
 }

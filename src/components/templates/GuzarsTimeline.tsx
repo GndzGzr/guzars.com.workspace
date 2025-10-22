@@ -1,14 +1,10 @@
-
-import React, { useState } from 'react';
-
+import { Grids } from "./GuzarsGrid"
 const GuzarsTimeline = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
     return (
-        <>
-
-
-        </>
+        <Grids.AboutTimeLine />
     )
 }
+        
 
-export default GuzarsTimeline;
+        
+ 

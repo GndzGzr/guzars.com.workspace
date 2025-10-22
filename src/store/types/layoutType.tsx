@@ -1,9 +1,15 @@
 const Alignments = {
-    center: 'items-center justify-center',
-    left: 'flex justify-center items-start',
-    right: 'flex justify-end items-end',
-    start: 'flex justify-start items-start',
-    end: 'flex justify-end items-end',
+    center: 'flex items-center',
+    left: 'flex items-start ',
+    right: 'flex items-end',
+    start: 'flex items-start',
+    end: 'flex items-end',
+} as const;
+const VerticalAlignments = {
+    center: 'justify-center',
+    top: 'justify-start',
+    bottom: 'justify-end',
+    between: 'justify-between',
 } as const;
 
 const Paddings = {
@@ -26,7 +32,8 @@ const gapSizes = {
 const Height = {
     none: '',
     small: 'h-24',
-    screen: 'min-h-screen',
+    minScreen: 'min-h-screen',
+    maxScreen: 'max-h-screen',
     full: 'h-full',
 } as const;
 const Width = {
@@ -83,10 +90,11 @@ type AtomLayoutProps = {
     width?: keyof typeof Width;
     flow?: keyof typeof Flow;
     align?: keyof typeof Alignments;
+    verticalAlign?: keyof typeof VerticalAlignments;
     padding?: keyof typeof Paddings;
     margin?: keyof typeof Margins;
 };
 
 export type { AtomLayoutProps };
-export { Alignments, Paddings, Margins, Height, Width, Flow, ColNumbers, RowNumbers, gapSizes };
+export { Alignments, Paddings, Margins, Height, Width, Flow, ColNumbers, RowNumbers, gapSizes, VerticalAlignments };
 

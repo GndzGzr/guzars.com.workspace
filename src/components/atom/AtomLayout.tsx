@@ -1,9 +1,10 @@
 
-import { AtomLayoutProps, Alignments, Margins, Paddings, Width, Height, Flow, RowNumbers, ColNumbers, gapSizes } from "@/store/types/layoutType";
+import { AtomLayoutProps, Alignments, Margins, Paddings, Width, Height, Flow, RowNumbers, ColNumbers, gapSizes, VerticalAlignments } from "@/store/types/layoutType";
 
 const AtomLayout = ({
     children,
     align = 'center',
+    verticalAlign = 'center',
     padding = 'medium',
     margin = 'none',
     gapSize = 'none',
@@ -17,7 +18,8 @@ const AtomLayout = ({
     return (
         <div
             className={`
-            ${Alignments[align]} 
+            ${Alignments[align]}
+            ${VerticalAlignments[verticalAlign]}
             ${Paddings[padding]} 
             ${Margins[margin]} 
             ${gapSizes[gapSize]} 
