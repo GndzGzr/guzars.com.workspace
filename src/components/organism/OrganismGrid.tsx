@@ -38,7 +38,7 @@ const TimeLineGrid = () => {
             <SectionHeaderLabel sectionHeader={t("sections.timeline") as string} />
             <div className="">{gridDict[currentItem.id]}</div>
             <motion.div
-                className="mt-16 px-2"
+                className="mt-16 px-2 timeline"
 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -108,30 +108,37 @@ const TimeLineGrid = () => {
 
                     {/* Current Timeline Info - Responsive */}
                     <motion.div
-                        className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0"
+                        className="timeline flex flex-col md:flex-row justify-between items-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.6, delay: 1.6 }}
                     >
-                        <motion.span
-                            className="text-xs md:text-sm text-foreground/50 font-light tracking-wider order-2 md:order-1"
-                            key={currentIndex}
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            {String(currentIndex + 1).padStart(2, '0')} / {String(timelineData.length).padStart(2, '0')}
-                        </motion.span>
 
-                        <motion.span
-                            className="text-sm md:text-base text-foreground/70 font-light tracking-wide text-center md:text-right order-1 md:order-2"
-                            key={currentItem.title}
-                            initial={{ opacity: 0, x: 10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.3 }}
-                        >
-                            {currentItem.title}
-                        </motion.span>
+
+                        <AtomText variant="timeLineInfo" family="sans" className="timeLineInfo ">
+                            <motion.span
+
+                                key={currentIndex}
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                {String(currentIndex + 1).padStart(2, '0')} / {String(timelineData.length).padStart(2, '0')}
+                            </motion.span>
+                        </AtomText>
+
+                        <AtomText variant="timeLineInfo" family="sans" className="timeLineInfo">
+                            <motion.span
+                                key={currentItem.title}
+                                initial={{ opacity: 0, x: 10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+                                {currentItem.title}
+                            </motion.span>
+                        </AtomText>
+
+
                     </motion.div>
 
                 </div>

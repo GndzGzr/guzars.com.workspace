@@ -1,5 +1,3 @@
-
-
 /* Font imports */
 :root {
   --font-sans: "Open Sauce One", sans-serif;
@@ -28,7 +26,7 @@
   --font-style-normal: normal;
   --font-style-italic: italic;
   --font-style-oblique: oblique;
-  
+
 
 
 
@@ -58,13 +56,16 @@
   --font-size-5xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);
   --font-size-6xl: clamp(3.75rem, 3rem + 3.75vw, 5rem);
 
-  --font-size-pageHeading: 16rem; /* 160px */
-  --font-size-pageSubHeading: 13rem; /* 130px */
-  --font-size-sectionHeading: 8rem; /* 72px */
+  --font-size-pageHeading: 16rem;
+  /* 160px */
+  --font-size-pageSubHeading: 13rem;
+  /* 130px */
+  --font-size-sectionHeading: 8rem;
+  /* 72px */
 
 
-  --text-color-black: #000000;
-  --text-color-white: #ffffff;
+
+
 
 
 }
@@ -75,6 +76,7 @@
   font-family: "Open Sauce One";
   src: url("/fonts/OpenSauceOne-Regular.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Open Sauce One Medium";
   src: url("/fonts/OpenSauceOne-Medium.ttf") format("truetype");
@@ -84,39 +86,49 @@
   font-family: "Beatrice-Thin";
   src: url("/fonts/Beatrice-Thin.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Beatrice-Semibold";
   src: url("/fonts/Beatrice-Semibold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Beatrice";
   src: url("/fonts/Beatrice-Regular.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Beatrice-Medium";
   src: url("/fonts/Beatrice-Medium.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Beatrice-Light";
   src: url("/fonts/Beatrice-Light.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Beatrice-Bold";
   src: url("/fonts/Beatrice-Bold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Beatrice-Extrabold";
   src: url("/fonts/Beatrice-Extrabold.ttf") format("truetype");
 }
+
 .serif {
-    font-family: var(--font-serif);
-  }
-.sans {
-    font-family: var(--font-sans);
+  font-family: var(--font-serif);
 }
+
+.sans {
+  font-family: var(--font-sans);
+}
+
 .serif-thin {
   font-family: var(--font-serif--thin);
 }
+
 .serif-light {
   font-family: var(--font-serif--light);
 }
@@ -124,12 +136,15 @@
 .serif-medium {
   font-family: var(--font-serif--medium);
 }
+
 .serif-semibold {
   font-family: var(--font-serif--semibold);
 }
+
 .serif-bold {
   font-family: var(--font-serif--bold);
 }
+
 .serif-extrabold {
   font-family: var(--font-serif--extrabold);
 }
@@ -144,7 +159,9 @@
   :root {
     --text-color-black: #fafafa;
     --text-color-white: #0e0e0e;
-  
+    --passive-text-color: var(--black-200);
+    --active-text-color: var(--black-800);
+
   }
 }
 
@@ -153,33 +170,43 @@
   font-weight: var(--font-weight-light);
   line-height: var(--font-line-height-normal);
   letter-spacing: var(--font-letter-spacing-tighter);
-  color: var(--text-color-black);
+  
 }
+
 .pageSubHeading {
   font-size: var(--font-size-pageSubHeading);
   font-weight: var(--font-weight-light);
   line-height: var(--font-line-height-normal);
   letter-spacing: var(--font-letter-spacing-tighter);
-  color: var(--text-color-black);
+  
 }
+
 .sectionHeading {
   font-size: var(--font-size-sectionHeading);
   font-weight: var(--font-weight-regular);
   line-height: var(--font-line-height-normal);
   letter-spacing: var(--font-letter-spacing-normal);
-  color: var(--text-color-black);
+ 
 }
+
 .timeLineYear {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-light);
   line-height: var(--font-line-height-normal);
   letter-spacing: var(--font-letter-spacing-normal);
-  color: var(--text-color-black);
 }
+
+.timeLineInfo {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-extralight);
+  line-height: var(--font-line-height-normal);
+  letter-spacing: var(--font-letter-spacing-normal);
+}
+
 .paragraph {
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
   line-height: var(--font-line-height-normal);
   letter-spacing: var(--font-letter-spacing-normal);
-  color: var(--text-color-black);
 }
+

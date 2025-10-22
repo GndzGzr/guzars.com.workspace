@@ -27,7 +27,8 @@
   --white-900: #676767;
 
 
-  --passive-text-color: var(--black-400);
+  --passive-text-color: var(--black-200);
+  --highlighted-passive-text-color: var(--black-300);
   --active-text-color: var(--black-800);
 }
 
@@ -57,3 +58,8 @@ body {
 .timeline .passiveYear {
   color: var(--passive-text-color);
 }
+
+.timeline .timeLineInfo {
+  color: var(--highlighted-passive-text-color);
+}
+
